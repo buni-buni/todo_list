@@ -1,0 +1,48 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+  <div>
+    <label>
+      Task Name:
+      <input formControlName="taskName" placeholder="Your name">
+    </label>
+    <div *ngIf="myForm.get('taskName').invalid && (myForm.get('taskName').dirty || myForm.get('taskName').touched)">
+      Please provide a Task name.
+    </div>
+  </div>
+  <div>
+    <label>
+      Desc:
+      <input formControlName="desc" placeholder="Your name">
+    </label>
+    <div *ngIf="myForm.get('desc').invalid && (myForm.get('desc').dirty || myForm.get('desc').touched)">
+      Please provide a Task desc.
+    </div>
+  </div>
+  <div>
+    <label>
+      Email:
+      <input formControlName="email" placeholder="Your email">
+    </label>
+  </div>
+  <div>
+    <label>
+      Start Date
+      <input type="date" formControlName="startDate">
+    </label>
+  </div>
+  <div>
+    <label>
+      End Date
+      <input type="date" formControlName="endDate" >
+    </label>
+  </div>
+  <div>
+    <label>
+      efforts:
+      <input formControlName="efforts" placeholder="Your efforts">
+    </label>
+    <div *ngIf="myForm.get('efforts').invalid && (myForm.get('efforts').dirty || myForm.get('efforts').touched)">
+      Whats your effort
+    </div>
+  </div>
+  <button type="submit" [disabled]="myForm.invalid">Send</button>
+</form>
