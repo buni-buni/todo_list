@@ -20,7 +20,7 @@ export class FetchTodoComponent implements OnInit {
       "startDate": "2023-06-14",
       "endDate": "2023-06-29",
       "email": "s@s.com",
-      "efforts": "3"
+      "efforts": "309"
   },
   {
     "taskName": "ss",
@@ -29,6 +29,22 @@ export class FetchTodoComponent implements OnInit {
     "endDate": "2023-06-30",
     "email": "22@s.com",
     "efforts": "13"
+},
+{
+  "taskName": "s",
+  "desc": "s",
+  "startDate": "2023-06-14",
+  "endDate": "2023-06-29",
+  "email": "s@s.com",
+  "efforts": "23"
+},
+{
+"taskName": "ss",
+"desc": "as",
+"startDate": "2023-06-24",
+"endDate": "2023-06-30",
+"email": "22@s.com",
+"efforts": "133"
 }
 ]
   }
